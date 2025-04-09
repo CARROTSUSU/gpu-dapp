@@ -1,0 +1,17 @@
+body {
+  background: #111;
+  color: #0f0;
+  font-family: monospace;
+  padding: 20px;
+}
+button {
+  background: #0f0;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.gpu-output {
+  margin-top: 30px;
+}
