@@ -38,3 +38,25 @@ document.getElementById('submit').onclick = () => {
   alert(`Simulated submit: ${score.toFixed(4)} by ${walletAddress}`);
   // Nanti kirim ke smart contract di sini
 };
+// Impor ethers.js
+const { ethers } = require('ethers');
+
+// Inisialisasi provider (menggunakan MetaMask)
+const provider = new ethers.providers.Web3Provider(window.ethereum);
+
+// Minta akses ke akun MetaMask
+await provider.send("eth_requestAccounts", []);
+
+// Dapatkan signer
+const signer = provider.getSigner();
+
+// Alamat smart contract yang telah dideploy
+const contractAddress = 'ALAMAT_KONTRAK_ANDA';
+
+// ABI dari smart contract
+const contractABI = [
+  // Salin isi ABI Anda di sini
+];
+
+// Inisialisasi kontrak
+const gpuSimContract = new ethers.Contract(contractAddress, contractABI, signer);
