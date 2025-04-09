@@ -39,7 +39,7 @@ document.getElementById('submit').onclick = () => {
   // Nanti kirim ke smart contract di sini
 };
 // Impor ethers.js
-const { ethers } = require('ethers');
+
 
 // Inisialisasi provider (menggunakan MetaMask)
 const provider = new ethers.providers.Web3Provider(window.ethereum);
