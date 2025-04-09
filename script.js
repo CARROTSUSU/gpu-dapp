@@ -36,7 +36,7 @@ document.getElementById('runSim').onclick = () => {
 document.getElementById('submit').onclick = async () => {
   if (!walletAddress) return alert("Please connect wallet first.");
 
-  const contractAddress = "ALAMAT_KONTRAK_ANDA";
+  const contractAddress = "0xd9145CCE52D386f254917e481eB44e9943F39138";
   const contractABI = [
     // Ganti dengan ABI kontrak kamu
     "function submitScore(uint256 _score) public"
